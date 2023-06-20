@@ -2,6 +2,17 @@
 
 > Tiny Cypress E2E test case
 
+This is reproduction for https://github.com/cypress-io/cypress/issues/20607
+
+Steps
+* `npm install`
+* `npm run dev`
+* `npx cypress open`
+* Run e2e test and see it fail
+* Comment out `scroll-behavior: smooth;` in index.html
+* Run e2e test and see if pass
+
+
 Build status | Name | Description
 :--- | :--- | :---
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/cypress-io/cypress-test-tiny/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/cypress-io/cypress-test-tiny/tree/master) | CircleCI | Linux & Mac & Win 64
